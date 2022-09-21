@@ -1,7 +1,7 @@
 const notes = require('express').Router();
 const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 const uuid = require('../helpers/uuid');
-// const dbActivities = require('../db/dbActivities')
+
 
 // GET Route for retrieving all the notes
 notes.get('/notes', (req, res) =>
@@ -15,20 +15,17 @@ notes.post('/notes', (req, res) => {
 
   // If all the required properties are present
   if (title && text) {
-    // Variable for the object we will save
+    // Variable for the new object that will be saved
     const newNote2 = {
       title,
       text,
       id: uuid(),
     };
 
+    // adds new note to json file
     readAndAppend(newNote2, './db/db.json');
 
-  // write a function that reads all of the entries in db.json and displays them in the html
-  // run when app loads, so notes are getting pulled or applied
-  // have to add or remove need to reread all (place the function in a .js file in the db folder, have already created dbActivities.js)
-  
-
+    // displays error if problem with the note
     res.json(newNote2);
   } else {
     res.json('Error in posting note');

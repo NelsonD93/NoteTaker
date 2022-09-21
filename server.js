@@ -29,13 +29,7 @@ app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, './public/notes.html'))
 );
 
-//*** HOW TO BUILD POST ROUTE, what do we want to happen with the data once we post it?*/ app.post('/notes', (req,res) =>
-
-// app.post('api/notes', (req, res) =>
-// res.sendFile(path.join(__dirname, './public/notes.html'))
-// );
-// // );
-
+// Sets port to listen and console logs it in a url to click from command line
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );

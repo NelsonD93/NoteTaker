@@ -17,5 +17,10 @@ The following .gifs shows the application's appearance and functionality on a de
 <a href="https://lizrzexpressjsnotetakerapp.herokuapp.com/">
 https://lizrzexpressjsnotetakerapp.herokuapp.com/</a>
 
+## Link to deployed application on Heroku
+
+<a href="https://lizrzexpressjsnotetakerapp.herokuapp.com/">
+https://lizrzexpressjsnotetakerapp.herokuapp.com/</a>
+
 ## Notes
 Because I did not have the file structure set up correctly, I had to delete my initial repository so the final repository does not have as many commits as I usually have on projects.
